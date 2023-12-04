@@ -20,8 +20,10 @@ class UserService {
     return axios.get(API_URL + 'admin', { headers: authHeader() });
   }
   getPerson(){
-    return axios.get( 'http://localhost:8080/person');
+    return axios.get( 'https://b279a239-c0af-4973-9858-b3089192ae3e.e1-us-east-azure.choreoapps.dev:8080/person');
   }
 }
+
+
 
 export default new UserService();
