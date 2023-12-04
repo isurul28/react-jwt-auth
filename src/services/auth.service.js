@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/auth/";
+const API_URL = "https://b279a239-c0af-4973-9858-b3089192ae3e.e1-us-east-azure.choreoapps.dev:8080/api/auth/";
 
 class AuthService {
   login(username, password) {
