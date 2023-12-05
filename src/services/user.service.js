@@ -1,7 +1,7 @@
 import axios from 'axios';
 import authHeader from './auth-header';
 
-const API_URL = 'https://b279a239-c0af-4973-9858-b3089192ae3e.e1-us-east-azure.choreoapps.dev:8080/api/test/';
+const API_URL = 'https://b279a239-c0af-4973-9858-b3089192ae3e.e1-us-east-azure.choreoapps.dev/api/test/';
 
 class UserService {
   getPublicContent() {
@@ -20,10 +20,8 @@ class UserService {
     return axios.get(API_URL + 'admin', { headers: authHeader() });
   }
   getPerson(){
-    return axios.get( 'https://b279a239-c0af-4973-9858-b3089192ae3e.e1-us-east-azure.choreoapps.dev:8080/person');
+    return axios.get('https://b279a239-c0af-4973-9858-b3089192ae3e.e1-us-east-azure.choreoapps.dev/person');
   }
 }
-
-
 
 export default new UserService();
